@@ -1,133 +1,17 @@
 .App {
   text-align: center;
   box-sizing: border-box;
+	background-color: #0a0f24; /* 深色背景 */
+
 }
-
-
-.header {
-  display: flex;
-  height: 56px;
-  margin: 0 auto;
-  padding: 4px 20px;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FFF;
-  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
-  position: fixed;
+.Particles {
+  position: absolute; /* 确保可以使用z-index */
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* 设置为负值，使其位于其他内容之后 */
 }
 
-.linkButton {
-  font-family: "GenSenRounded B";
-  font-size: 18px;
-  display: flex;
-  padding: 10px 16px;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-  border-radius: 16px;
-  background-color: transparent;
-  color: #333;
-  cursor: pointer;
-  border: none;
-}
 
-.linkButton:hover {
-  background-color: #f0f0f0;
-}
 
-.fixedBox {
-  position: fixed;
-  left: 0;
-  top: 60%;
-  transform: translateX(var(--translate-x)) translateY(-50%);
-  width: 20px;
-  height: 172px;
-  background-color: #7EC0FC;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 48px 18px;
-  z-index: 100;
-  border-radius: 0px 20px 20px 0px;
-  color: #FFF;
-  transition: transform 0.5s ease, background-color 0.5s ease;
-}
-
-.hideSidebar {
-  --translate-x: -100%;
-}
-
-.verticalText {
-  writing-mode: vertical-rl;
-  transform: rotate(0deg);
-  font-family: "GenSenRounded B";
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-.scrollToTopButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  width: 64px;
-  height: 64px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #7EC0FC;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-
-.scrollToTopButton:hover {
-  width: 72px;
-  height: 72px;
-  background-color: #8CC7FC;
-}
-
-.scrollToTopButton:active {
-  width: 60px;
-  height: 60px;
-  background-color: #6AB0EC;
-}
-
-/* 向左淡出动画 */
-@keyframes fadeOutToLeft {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-}
-
-/* 向右淡入动画 */
-@keyframes fadeInFromRight {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.fadeOutToLeft {
-  animation: fadeOutToLeft 0.2s forwards;
-}
-
-.fadeInFromRight {
-  animation: fadeInFromRight 0.2s forwards;
-}

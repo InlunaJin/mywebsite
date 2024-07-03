@@ -1,0 +1,22 @@
+#DDD {
+
+  height: 800px;
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+    z-index: 5; /* 图片容器应位于横线之上 */
+}
+
+
+button {
+  margin: 0 20px; /* Adds spacing around buttons */
+   z-index: 1; /* 图片容器应位于横线之上 */
+}
+
+#DDD .model-viewer {
+  width: 1000px;  /* 限制宽度为500像素 */
+  height: 300px; /* 限制高度为300像素 */
+}

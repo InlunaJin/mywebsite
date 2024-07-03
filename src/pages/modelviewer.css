@@ -1,0 +1,26 @@
+.model-viewer-container {
+	position :relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	z-index: 5;
+}
+
+.model-viewer-button {
+    margin-right: 20px; /* 上一個按鈕 */
+}
+
+.model-viewer-button:last-of-type {
+    margin-right: 0;
+    margin-left: 20px; /* 下一個按鈕 */
+}
+.model-viewer-container iframe {
+
+}
+
+@media (max-width: 768px) { /* 針對平板和手機的螢幕尺寸做調整 */
+    .model-viewer-container iframe {
+        max-width: 100%; /* 螢幕較小時，iframe 寬度調整為 100% */
+        height: 480px; /* 設定一個適合的固定高度 */
+    }
+}

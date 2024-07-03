@@ -1,4 +1,5 @@
 import React from 'react';
+import ModelViewer from './ModelViewer'; // 确保路径正确
 
 function Art() {
   return (

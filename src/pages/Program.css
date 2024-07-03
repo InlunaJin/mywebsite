@@ -1,0 +1,43 @@
+.program-container {
+	
+  height: 800px;
+  background-color: transparent;
+  padding: 20px;
+  z-index: 5;
+}
+
+
+.program-iframe {
+	 position: relative; /* 确保可以使用z-index */
+  width: 1280px;
+  height: 720px;
+  border: 0;
+  z-index: 5;
+}
+
+.program-button {
+	 
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.program-button:hover {
+  background-color: #0056b3;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+    .program-iframe {
+        width: 100%; /* 將寬度設為 100%，使其滿版顯示 */
+      height: 300px; /* 重置高度 */
+ 
+	   
+		
+    }
+}
