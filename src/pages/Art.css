@@ -1,5 +1,34 @@
 #art {
+  height: 500px;
+  background-color: transparent;
+  padding: 20px;
+}
+.art-container {
+	
   height: 800px;
   background-color: transparent;
   padding: 20px;
+  z-index: 5;
+}
+
+
+.art-iframe {
+	 position: relative; /* 确保可以使用z-index */
+  width: 640px;
+  height: 360px;
+  border: 0;
+  z-index: 5;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .art-iframe {
+        width: 100%; /* 將寬度設為 100%，使其滿版顯示 */
+      height: 300px; /* 重置高度 */
+ 
+	   
+		
+    }
 }

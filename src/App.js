@@ -26,10 +26,10 @@ function App() {
         value: "#007bff" // 藍色系
       },
       shape: {
-        type: "square"
+        type: ""
       },
       opacity: {
-        value: 0.5 // 可以調整為較低透明度以減少視覺干擾
+        value: 0.3 // 可以調整為較低透明度以減少視覺干擾
       },
       size: {
         value: { min: 1, max: 8 }
@@ -38,7 +38,7 @@ function App() {
         enable: true,
         distance: 150,
         color: "#0056b3", // 深藍色連結
-        opacity: 0.5,
+        opacity: 0.3,
         width: 1
       },
       move: {

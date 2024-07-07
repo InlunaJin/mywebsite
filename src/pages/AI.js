@@ -16,11 +16,11 @@ function AI() {
   const swiperRef = useRef(null); // Create a ref for the Swiper instance
 
   const slides = [
-    { img: process.env.PUBLIC_URL + '/img/SD.png', description: '465423168435138431354354413135435438435465423168435138431354354413135435438435465423168435138431354354413135435438435465423168435138431354354413135435438435' },
-    { img: process.env.PUBLIC_URL + '/img/comfy.png', description: '描述2' },
-    { img: process.env.PUBLIC_URL + '/img/Train.png', description: '描述3' },
-    { img: process.env.PUBLIC_URL + '/img/RVC.png', description: '描述4' },
-    { img: process.env.PUBLIC_URL + '/img/TextGen.png', description: '描述5' }
+    { img: process.env.PUBLIC_URL + '/img/SD.png', description: 'StableDiffusion-webui-活用及研究插件等繪圖工具，並開發流程' },
+    { img: process.env.PUBLIC_URL + '/img/comfy.png', description: 'ComfyUI-活用及研究插件等繪圖工具，並開發流程' },
+    { img: process.env.PUBLIC_URL + '/img/Train.png', description: 'kohyass-webui-進行特定圖像生成模型訓練' },
+    { img: process.env.PUBLIC_URL + '/img/RVC.png', description: 'RVC-模仿特定人物音色' },
+    { img: process.env.PUBLIC_URL + '/img/TextGen.png', description: 'TextGeneration-webui透過大型語言模型進行角色扮演及對話' }
   ];
 
   return (

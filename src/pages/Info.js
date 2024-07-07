@@ -16,9 +16,18 @@ function Info() {
         </div>
         {/* 文字描述 */}
         <div className="text-container">
-          <p>这是一张头像图片</p>
-          <p>您可以在这里添加更多描述</p>
-          <p>根据需要添加更多行</p>
+        <h1>林迺鈞</h1>
+          <p>跨領域AI提示工程師</p>
+          <p></p>
+          <h1>學經歷</h1>
+          <p>國立臺北藝術大學</p>
+          <p>愛迪斯科技-互動工程師</p>
+          <p>雷亞遊戲-AI技術美術</p>
+          <p></p>
+          <h1>多媒體技能</h1>
+          <p>程式-Unity開發、Python、Arduino、React、ReactNative</p>
+          <p>美術-Blender、Live2D、Premiere、AfterEffect、Photoshop、Illustrator、MarvelousDesigner</p>
+          
         </div>
       </div>
     </div>
