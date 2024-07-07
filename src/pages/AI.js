@@ -1,59 +1,52 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css'; // Import Swiper styles
-import { Navigation } from 'swiper/modules';
-import './AI.css'; // Import AI.css stylesheet
+import 'swiper/css/pagination';
+
+// Import your AI.css stylesheet
+import './AI.css';
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 function AI() {
   const swiperRef = useRef(null); // Create a ref for the Swiper instance
 
-  const images = [
-    process.env.PUBLIC_URL + '/img/SD.png',
-    process.env.PUBLIC_URL + '/img/comfy.png',
-    process.env.PUBLIC_URL + '/img/Train.png',
-    process.env.PUBLIC_URL + '/img/RVC.png',
-    process.env.PUBLIC_URL + '/img/TextGen.png'
+  const slides = [
+    { img: process.env.PUBLIC_URL + '/img/SD.png', description: '465423168435138431354354413135435438435465423168435138431354354413135435438435465423168435138431354354413135435438435465423168435138431354354413135435438435' },
+    { img: process.env.PUBLIC_URL + '/img/comfy.png', description: '描述2' },
+    { img: process.env.PUBLIC_URL + '/img/Train.png', description: '描述3' },
+    { img: process.env.PUBLIC_URL + '/img/RVC.png', description: '描述4' },
+    { img: process.env.PUBLIC_URL + '/img/TextGen.png', description: '描述5' }
   ];
-
-  // Function to go to the next slide
-  const goNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
-
-  // Function to go to the previous slide
-  const goPrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
-  };
 
   return (
     <div className="ai-container">
       <h1>使用AI工具</h1>
       <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        loop={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         spaceBetween={50}
         slidesPerView={1}
         centeredSlides={true}
-        loop={true}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }}
-        modules={[Navigation]}
         onSwiper={(swiper) => swiperRef.current = swiper}
+        className="mySwiper"
       >
-        {images.map((image, index) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} className="ai-image" />
+            <img src={slide.img} alt={`Slide ${index + 1}`} className="ai-image" />
+            <p>{slide.description}</p> {/* Show description below each image */}
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* Custom buttons */}
-      <button className="ai-button" onClick={goPrev}>上一张</button>
-      <button className="ai-button" onClick={goNext}>下一张</button>
     </div>
   );
 }

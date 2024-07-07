@@ -15,23 +15,9 @@
   z-index: 5;
 }
 
-.program-button {
-	 
-  margin: 10px;
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  z-index: 6;
-}
 
-.program-button:hover {
-  background-color: #0056b3;
-  z-index: 5;
-}
+
+
 @media (max-width: 768px) {
     .program-iframe {
         width: 100%; /* 將寬度設為 100%，使其滿版顯示 */

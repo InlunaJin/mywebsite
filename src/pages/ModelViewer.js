@@ -30,7 +30,7 @@ function ModelViewer() {
         <div className="model-viewer-container">
             <button onClick={handlePrev} className="model-viewer-button">上一個</button>
             <div>
-                <h1>{models[currentIndex].description}</h1>
+                 
                 <iframe
                     title="Sketchfab Model"
                     src={models[currentIndex].url}
@@ -39,8 +39,10 @@ function ModelViewer() {
                     allow="autoplay; fullscreen; xr-spatial-tracking"
                     frameBorder="0"
                 ></iframe>
+                <p>{models[currentIndex].description}</p>
             </div>
-            <button onClick={handleNext} className="model-viewer-button">下一個</button>
+            <button onClick={handleNext} className="button">下一個</button>
+            
         </div>
     );
 }

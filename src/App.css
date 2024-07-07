@@ -13,5 +13,33 @@
   z-index: 1; /* 设置为负值，使其位于其他内容之后 */
 }
 
+h1 {
+    color: white;
+    position: relative; /* 根據需求可以選擇 absolute, fixed, 或 sticky */
+    z-index: 10; /* 保持層級高於其他元素 */
+    margin-bottom: 20px; /* 增加與下方元素的間距 */
+}
 
+p {
+    color: white;
+    position: relative;
+    z-index: 10;
+    word-wrap: break-word; /* 允許長單詞在需要時可以在任意位置斷開換行 */
+    overflow-wrap: break-word; /* 同上，增加兼容性 */
+    white-space: normal; /* 確保文本不是在一行顯示 */
+    margin-top: 20px; /* 與上方元素的間距，可以根據需要調整 */
+}
+
+button {
+	  position: relative; /* 或 absolute, fixed, sticky 根據需求選擇 */
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10;
+}
 

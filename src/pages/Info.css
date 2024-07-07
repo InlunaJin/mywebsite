@@ -33,10 +33,10 @@
 }
 
 .image {
-  width: 240px; /* 图片的宽度和高度调整 */
-  height: 240px;
+  width: 200px; /* 图片的宽度和高度调整 */
+  height: 200px;
   object-fit: cover; /* 保持图片内容覆盖整个内容区域 */
-  transform: rotate(-45deg) translate(-25%, 30%); /* 逆向旋转并调整位置以居中 */
+  transform: rotate(-45deg) translate(-17%, 17%); /* 逆向旋转并调整位置以居中 */
 }
 .text-container {
   flex: 0.5;
