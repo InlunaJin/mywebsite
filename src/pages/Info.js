@@ -18,6 +18,7 @@ function Info() {
         <div className="text-container">
         <h1>林迺鈞</h1>
           <p>跨領域AI提示工程師</p>
+          <p>inlujajin@gmail.com</p>
           <p></p>
           <h1>學經歷</h1>
           <p>國立臺北藝術大學</p>
