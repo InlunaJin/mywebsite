@@ -44,6 +44,7 @@ function AI() {
           <SwiperSlide key={index}>
             <img src={slide.img} alt={`Slide ${index + 1}`} className="ai-image" />
             <p>{slide.description}</p> {/* Show description below each image */}
+            <p></p>
           </SwiperSlide>
         ))}
       </Swiper>

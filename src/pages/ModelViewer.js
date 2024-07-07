@@ -28,7 +28,7 @@ function ModelViewer() {
 
     return (
         <div className="model-viewer-container">
-            <button onClick={handlePrev} className="model-viewer-button">上一個</button>
+            <button onClick={handlePrev} className="model-viewer-button">＜</button>
             <div>
                  
                 <iframe
@@ -41,7 +41,7 @@ function ModelViewer() {
                 ></iframe>
                 <p>{models[currentIndex].description}</p>
             </div>
-            <button onClick={handleNext} className="button">下一個</button>
+            <button onClick={handleNext} className="button">＞</button>
             
         </div>
     );

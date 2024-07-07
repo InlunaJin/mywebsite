@@ -51,6 +51,7 @@ function Art() {
               allowFullScreen
             ></iframe>
             <p>{video.description}</p>
+            <p></p>
           </SwiperSlide>
         ))}
       </Swiper>
