@@ -17,7 +17,8 @@ function Info() {
         {/* 文字描述 */}
         <div className="text-container">
         <h1>林迺鈞</h1>
-          <p>跨領域AI提示工程師</p>
+          <p>生成式AI應用工程師</p>
+          <p>多媒體設計師</p>
           <p>inlujajin@gmail.com</p>
           <p></p>
           <h1>學經歷</h1>
